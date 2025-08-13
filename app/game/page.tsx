@@ -1,3 +1,5 @@
+"use client"
+
 import { Header } from "@/components/header"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -37,6 +39,7 @@ export default function GameLandingPage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-12 py-6 text-xl font-semibold neon-glow card-hover border-0"
+              onClick={() => (window.location.href = "/game/lobby")}
             >
               Real Game
             </Button>
